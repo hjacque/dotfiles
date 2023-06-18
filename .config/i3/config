@@ -188,6 +188,7 @@ bar {
 #
 # CUSTOM KEYS START
 #
+exec "setxkbmap us altgr-intl"
 
 # Move focused workspace between monitors
 bindsym $mod+Ctrl+greater move workspace to output right
