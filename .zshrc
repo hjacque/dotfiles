@@ -80,4 +80,4 @@ export NVM_DIR="$HOME/.nvm"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"alias
-alias config='/usr/bin/git --git-dir=$HOME/h42/.cfg/ --work-tree=$HOME/h42'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
