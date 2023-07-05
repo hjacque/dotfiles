@@ -38,6 +38,12 @@ sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/ins
 ```
 [ressource](https://ohmyz.sh/#install)
 
+### i3
+```shell
+sudo apt install i3 // reboot once install completed
+```
+[ressource](https://i3wm.org)
+
 ### Dotfiles
 ```shell
 echo ".cfg" >> .gitignore
