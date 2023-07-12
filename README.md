@@ -59,9 +59,3 @@ config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
 xargs -I{} mv {} .config-backup/{}
 ```
 [ressource](https://www.atlassian.com/git/tutorials/dotfiles)
-
-### Task bar
-```shell
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-```
