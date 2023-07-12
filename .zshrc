@@ -84,6 +84,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Go
+export PATH=$PATH:/usr/local/go/bin
+
+# direnv
+eval "$(direnv hook zsh)"
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -110,6 +116,6 @@ alias configlog="config log --graph --format=format:'%C(bold blue)%h%C(reset) - 
 
 alias gitlog="/usr/bin/git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"
 
-alias up="sudo apt update && sudo apt -y upgrade"
+alias up="sudo apt update && sudo apt -y upgrade && sudo apt autoremove"
 
 setxkbmap us altgr-intl
