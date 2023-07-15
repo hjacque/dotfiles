@@ -189,6 +189,9 @@ bar {
 # CUSTOM KEYS START
 #
 
+# Lock screen
+bindsym $mod+Shift+x exec i3lock
+
 # Move focused workspace between monitors
 bindsym $mod+Ctrl+greater move workspace to output right
 bindsym $mod+Ctrl+less move workspace to output left
