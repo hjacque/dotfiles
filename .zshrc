@@ -117,5 +117,6 @@ alias configlog="config log --graph --format=format:'%C(bold blue)%h%C(reset) - 
 alias gitlog="/usr/bin/git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"
 
 alias up="sudo apt update && sudo apt -y upgrade && sudo apt autoremove"
+alias cp="cp -iv"
 
 setxkbmap us altgr-intl
