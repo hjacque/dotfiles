@@ -44,6 +44,15 @@ sudo apt install i3 // reboot once install completed
 ```
 [ressource](https://i3wm.org)
 
+### Neovim
+```shell
+sudo apt install ninja-build gettext cmake unzip curl // install build prerequisites
+git clone https://github.com/neovim/neovim
+cd neovim && git checkout stable && make CMAKE_BUILD_TYPE=RelWithDebInfo
+cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb // default install location is /usr/local
+```
+[ressources](https://github.com/neovim/neovim/wiki/Building-Neovim)
+
 ### Dotfiles
 ```shell
 echo ".cfg" >> .gitignore
