@@ -51,7 +51,7 @@ git clone https://github.com/neovim/neovim
 cd neovim && git checkout stable && make CMAKE_BUILD_TYPE=RelWithDebInfo
 cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb // default install location is /usr/local
 ```
-[ressources](https://github.com/neovim/neovim/wiki/Building-Neovim)
+[ressource](https://github.com/neovim/neovim/wiki/Building-Neovim)
 
 ### Dotfiles
 ```shell
