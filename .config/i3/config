@@ -206,5 +206,15 @@ bindsym $mod+F10 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle 
 bindsym $mod+F11 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym $mod+F12 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 
+# Wallpaper script
+exec --no-startup-id ~/.fehbg
+
 # Deadactivate focus follows mouse
 focus_follows_mouse no
+
+# Gaps
+gaps inner 20px
+gaps outer 10px
+
+bindsym $mod+F7 gaps inner current plus 10
+bindsym $mod+F9 gaps inner current minus 10
