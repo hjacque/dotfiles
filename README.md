@@ -13,14 +13,6 @@ sudo dpkg-reconfigure keyboard-configuration
 sudo reboot
 ```
 [ressource](https://dev.to/tallesl/change-caps-lock-to-ctrl-3c4)
-### Gnome terminal profile
-```shell
-dconf load /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ < .material-theme-profile.dconf // restore the profile
-
-dconf dump /org/gnome/terminal/legacy/profiles:/ // list profiles, take [profileid]
-dconf dump /org/gnome/terminal/legacy/profiles:/:profileid/ > .material-theme-profile.dconf // export profile
-```
-[ressource](https://gist.github.com/fdaciuk/9ec4d8afc32063a6f74a21f8308e3807)
 ### Git
 ```shell
 sudo apt -y install git-all
@@ -55,6 +47,16 @@ sudo apt update
 sudo apt install i3 // logout & log back in once install completed
 ```
 [ressource](https://i3wm.org/docs/repositories.html)
+
+### Gnome terminal profile
+```shell
+dconf load /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ < .material-theme-profile.dconf // restore the profile
+
+dconf dump /org/gnome/terminal/legacy/profiles:/ // list profiles, take [profileid]
+dconf dump /org/gnome/terminal/legacy/profiles:/:profileid/ > .material-theme-profile.dconf // export profile
+sudo apt install compton compton-conf
+```
+[ressource](https://gist.github.com/fdaciuk/9ec4d8afc32063a6f74a21f8308e3807)
 
 ### Neovim
 ```shell
