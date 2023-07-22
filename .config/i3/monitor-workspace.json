@@ -41,8 +41,8 @@
                                        "y": 0
                                     },
                                     "marks": [],
-                                    "name": "./scripts/cron.sh neofetch 60",
-                                    "percent": 0.5,
+                                    "name": "Terminal",
+                                    "percent": 0.45,
                                     "swallows": [
                                        {
                                        "class": "^Gnome\\-terminal$"
@@ -61,11 +61,31 @@
                                        "y": 0
                                     },
                                     "marks": [],
-                                    "name": "htop",
-                                    "percent": 0.5,
+                                    "name": "Terminal",
+                                    "percent": 0.441666666666667,
                                     "swallows": [
                                        {
-                                       "class": "Gnome-terminal"
+                                       "class": "^Gnome\\-terminal$"
+                                       }
+                                    ],
+                                    "type": "con"
+                                },
+                                {
+                                    "border": "pixel",
+                                    "current_border_width": 1,
+                                    "floating": "auto_off",
+                                    "geometry": {
+                                       "height": 434,
+                                       "width": 722,
+                                       "x": 0,
+                                       "y": 0
+                                    },
+                                    "marks": [],
+                                    "name": "./cron.sh ~/scripts/network-scan.sh 60",
+                                    "percent": 0.108333333333333,
+                                    "swallows": [
+                                       {
+                                       "class": "^Gnome\\-terminal$"
                                        }
                                     ],
                                     "type": "con"
@@ -83,7 +103,7 @@
                                "y": 0
                             },
                             "marks": [],
-                            "name": "cmatrix -s",
+                            "name": "h42@h42-blade-15:~/scripts",
                             "percent": 0.5,
                             "swallows": [
                                {
@@ -98,4 +118,3 @@
         }
     ]
 }
-
