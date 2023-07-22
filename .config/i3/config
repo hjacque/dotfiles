@@ -225,6 +225,10 @@ focus_follows_mouse no
 gaps inner 20px
 gaps outer 10px
 
+# Title bar
+default_border pixel 1
+default_floating_border pixel 1
+
 bindsym $mod+F7 gaps inner current plus 10
 bindsym $mod+F9 gaps inner current minus 10
 
