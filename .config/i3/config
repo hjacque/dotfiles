@@ -177,8 +177,16 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-
 bindsym $mod+r mode "resize"
+# single keypress resize
+bindsym $mod+Ctrl+j resize shrink width 5 px or 5 ppt
+bindsym $mod+Ctrl+k resize grow height 5 px or 5 ppt
+bindsym $mod+Ctrl+l resize shrink height 5 px or 5 ppt
+bindsym $mod+Ctrl+semicolon resize grow width 5 px or 5 ppt
+bindsym $mod+Ctrl+Left resize shrink width 5 px or 5 ppt
+bindsym $mod+Ctrl+Down resize grow height 5 px or 5 ppt
+bindsym $mod+Ctrl+Up resize shrink height 5 px or 5 ppt
+bindsym $mod+Ctrl+Right resize grow width 5 px or 5 ppt
 
 # Picom
 exec_always --no-startup-id exec picom
