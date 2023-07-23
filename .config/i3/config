@@ -179,12 +179,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Picom
+exec_always --no-startup-id exec picom
+
 # Start polybar to display a workspace bar 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-#
-# CUSTOM KEYS START
-#
 
 # Lock screen
 bindsym $mod+Shift+x exec i3lock
