@@ -36,13 +36,21 @@ sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/ins
 ```
 [ressource](https://ohmyz.sh/#install)
 
+### UniMatrix
+```shell
+sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
+sudo chmod a+rx /usr/local/bin/unimatrix
+unimatrix --asynchronous --flashers --character-list=m --color=red
+```
+[ressource](https://github.com/will8211/unimatrix)
+
 ### Polybar
 ```shell
 sudo apt install polybar
 ```
 [ressource](https://github.com/polybar/polybar)
 
-## Rofi
+### Rofi
 ```shell
 sudp apt install rofi
 ```
