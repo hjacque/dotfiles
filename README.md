@@ -1,7 +1,5 @@
 # .dotfiles
 
-#### In order
-
 ### Keyboard layout
 ```shell
 setxkbmap us altgr-intl
@@ -37,6 +35,12 @@ sudo apt install zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
 [ressource](https://ohmyz.sh/#install)
+
+### Polybar
+```shell
+sudo apt install polybar
+```
+[ressource](https://github.com/polybar/polybar)
 
 ### i3
 ```shell
