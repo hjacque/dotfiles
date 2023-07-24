@@ -72,6 +72,23 @@ sudo apt install picom
 ```
 [ressource](https://github.com/yshui/picom)
 
+### Neofetch
+```shell
+sudo apt install neofetch
+```
+[ressource](https://github.com/dylanaraps/neofetch)
+
+### nmap
+```shell
+sudo apt install nmap
+```
+
+### htop
+```shell
+sudo apt install htop
+```
+[ressource](https://github.com/htop-dev/htop)
+
 ### Gnome terminal profile
 ```shell
 dconf load /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ < .material-theme-profile.dconf // restore the profile
