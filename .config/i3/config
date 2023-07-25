@@ -237,4 +237,4 @@ client.placeholder      #000000 #332422 #AABCB7 #000000   #332422
 client.background       #AABCB7
 
 # dmenu
-bindsym $mod+x exec sh ~/scripts/dmenu/utils.sh
+bindsym $mod+x exec sh ~/scripts/dmenu/script-laucher.sh
