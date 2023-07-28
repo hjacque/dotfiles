@@ -238,3 +238,7 @@ client.background       #AABCB7
 
 # dmenu
 bindsym $mod+x exec sh ~/scripts/dmenu/script-launcher.sh
+
+# scratchpad
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
