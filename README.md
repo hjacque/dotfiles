@@ -52,7 +52,7 @@ sudo apt install polybar
 
 ### Rofi
 ```shell
-sudp apt install rofi
+sudo apt install rofi
 ```
 [ressource](https://github.com/davatorium/rofi)
 
@@ -98,6 +98,11 @@ dconf dump /org/gnome/terminal/legacy/profiles:/:profileid/ > .material-theme-pr
 sudo apt install compton compton-conf
 ```
 [ressource](https://gist.github.com/fdaciuk/9ec4d8afc32063a6f74a21f8308e3807)
+
+### feh
+```shell
+sudo apt install feh
+```
 
 ### Neovim
 ```shell
