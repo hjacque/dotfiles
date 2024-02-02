@@ -85,10 +85,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Go
-export PATH=$PATH:/usr/local/go/bin
+# export PATH=$PATH:/usr/local/go/bin
 
 # direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -120,3 +120,5 @@ alias up="sudo apt update && sudo apt -y upgrade && sudo apt autoremove"
 alias cp="cp -iv"
 
 setxkbmap us altgr-intl
+setxkbmap -option ctrl:swapcaps
+setxkbmap -option altwin:swap_alt_win
