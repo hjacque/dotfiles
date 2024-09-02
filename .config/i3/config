@@ -241,3 +241,8 @@ bindsym $mod+x exec sh ~/scripts/dmenu/script-launcher.sh
 # scratchpad
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+
+# keyboard layout
+setxkbmap us altgr-intl
+setxkbmap -option ctrl:swapcaps
+setxkbmap -option altwin:swap_alt_win

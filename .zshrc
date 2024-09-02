@@ -118,7 +118,3 @@ alias gitlog="/usr/bin/git log --graph --format=format:'%C(bold blue)%h%C(reset)
 
 alias up="sudo apt update && sudo apt -y upgrade && sudo apt autoremove"
 alias cp="cp -iv"
-
-setxkbmap us altgr-intl
-setxkbmap -option ctrl:swapcaps
-setxkbmap -option altwin:swap_alt_win
