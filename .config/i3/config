@@ -243,6 +243,6 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # keyboard layout
-exec "setxkbmap us altgr-intl"
-exec "setxkbmap -option 'ctrl:swapcaps'"
-exec "setxkbmap -option 'altwin:swap_alt_win'"
+exec_always "setxkbmap us altgr-intl"
+exec_always "setxkbmap -option 'ctrl:swapcaps'"
+exec_always "setxkbmap -option 'altwin:swap_alt_win'"
