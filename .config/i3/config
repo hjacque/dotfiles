@@ -216,9 +216,6 @@ exec --no-startup-id ~/.fehbg
 # Deadactivate focus follows mouse
 focus_follows_mouse no
 
-# Gaps
-gaps outer 10px
-
 # Title bar
 default_border pixel 1
 default_floating_border pixel 1
