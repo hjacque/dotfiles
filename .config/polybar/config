@@ -29,10 +29,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #1D262B
 background-alt = #0B5D7E
-;foreground = ${xrdb:color7:#222}
 foreground = #DBD5BF
 foreground-alt = #555
 primary = #93B0B1
@@ -45,7 +43,7 @@ width = 100%
 height = 30
 ;offset-x = 1%
 ;offset-y = 1%
-# radius = 6.0
+#radius = 6.0
 fixed-center = false
 
 background = ${colors.background}
@@ -68,18 +66,18 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 # modules-left = bspwm i3
-modules-left = i3
+modules-left = date
 # modules-center = mpd
-modules-center = date
+modules-center = i3
 # modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = battery wlan temperature
+modules-right = battery
 
 tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
 ;override-redirect = true
 
@@ -160,7 +158,7 @@ label-mode-background = ${colors.primary}
 ; focused = Active workspace on focused monitor
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused-underline= ${colors.foreground}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
@@ -170,7 +168,7 @@ label-unfocused-padding = 2
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
 label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
+label-visible-underline = ${colors.primary}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
@@ -275,15 +273,15 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date = " %Y-%m-%d"
-date-alt = " %Y-%m-%d"
+date = " %d/%m"
+#date-alt = " %Y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+#time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #DBD5BF
+#format-underline = ${colors.foreground}
 
 label = %date% %time%
 
@@ -349,7 +347,7 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-# format-charging-underline = #AD1B1A
+#format-charging-underline = ${colors.foreground}
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
