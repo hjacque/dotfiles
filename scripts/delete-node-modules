@@ -1,0 +1,4 @@
+#!/bin/sh
+
+[ $# -eq 0 ] && { echo "expected - args: path"; exit 1; }
+find "$@" -name node_modules -type d -print | xargs /bin/rm -rf
