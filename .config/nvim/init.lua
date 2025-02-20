@@ -93,7 +93,6 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
     'rebelot/kanagawa.nvim',
     priority = 1000,
     config = function()
@@ -154,6 +153,15 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons',
+      'MunifTanjim/nui.nvim',
+    },
+  },
 }, {})
 
 -- [[ Setting options ]]
