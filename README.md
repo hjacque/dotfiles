@@ -113,13 +113,6 @@ cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb // default install loc
 ```
 [ressource](https://github.com/neovim/neovim/wiki/Building-Neovim)
 
-### Ranger
-```shell
-sudo apt-get install python3 libncurses5-dev libncursesw5-dev pipx
-pipx run --spec ranger-fm ranger // install and run
-```
-[ressource](https://github.com/ranger/ranger)
-
 ### Dotfiles
 ```shell
 echo ".cfg" >> .gitignore
