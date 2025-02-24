@@ -113,6 +113,13 @@ cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb // default install loc
 ```
 [ressource](https://github.com/neovim/neovim/wiki/Building-Neovim)
 
+### lf
+building from source requires Go
+```shell
+env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
+```
+[ressource](https://github.com/gokcehan/lf)
+
 ### Dotfiles
 ```shell
 echo ".cfg" >> .gitignore
