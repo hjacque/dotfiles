@@ -4,7 +4,7 @@ storage_name="easystore"
 storage_location=$(lsblk --output MOUNTPOINTS | grep "$storage_name")
 comics_dir="${storage_location}/comics"
 
-find "$HOME/Downloads" -name \*.cbz -exec cp {} "${comics_dir}" \;
-find "$HOME/Downloads" -name \*.cbr -exec cp {} "${comics_dir}" \;
+find "$HOME/Downloads" -name \*.cbz -exec mv {} "${comics_dir}" \;
+find "$HOME/Downloads" -name \*.cbr -exec mv {} "${comics_dir}" \;
 
 lf "$comics_dir"
