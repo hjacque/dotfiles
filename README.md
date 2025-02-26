@@ -26,15 +26,15 @@ ssh-add ~/.ssh/id_ed25519
 ```
 [ressource](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-### Zsh & Oh My Zsh
+### Zsh & Zap 
 ```shell
 sudo apt install zsh
 ```
-[ressource](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+Zap is a minimal `zsh` plugin manager
 ```shell
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 ```
-[ressource](https://ohmyz.sh/#install)
+[ressource](https://github.com/zap-zsh/zap)
 
 ### UniMatrix
 ```shell
