@@ -232,14 +232,6 @@ client.urgent           #2f343a #AD1B1A #AABCB7 #AD1B1A   #AD1B1A
 client.placeholder      #000000 #332422 #AABCB7 #000000   #332422
 client.background       #AABCB7
 
-# dmenu
-bindsym $mod+x exec sh ~/scripts/dmenu/script-launcher.sh
-
 # scratchpad
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
-
-# keyboard layout
-exec_always "setxkbmap us altgr-intl"
-#exec_always "setxkbmap -option 'ctrl:swapcaps'"
-#exec_always "setxkbmap -option 'altwin:swap_alt_win'"
