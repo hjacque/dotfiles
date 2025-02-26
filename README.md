@@ -1,4 +1,4 @@
-# .dotfiles
+# dotfiles
 
 ### Keyboard layout
 ```shell
