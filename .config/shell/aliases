@@ -29,4 +29,5 @@ alias \
 
 # Common commands shorten
 alias \
-	sdn="shutdown -h now"
+	sdn="shutdown -h now" \
+	tr="tree"
