@@ -235,3 +235,6 @@ client.background       #AABCB7
 # scratchpad
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+
+# screenshot selection to clipboard
+bindsym $mod+Shift+s exec scrot -s - | xclip -selection clipboard -t image/png -i
