@@ -211,7 +211,7 @@ bindsym $mod+i exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && 
 bindsym $mod+o exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 
 # Wallpaper script
-exec --no-startup-id ~/.fehbg
+exec --no-startup-id fehbg
 
 # Deadactivate focus follows mouse
 focus_follows_mouse no
@@ -235,6 +235,3 @@ client.background       #AABCB7
 # scratchpad
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
-
-# screenshot selection to clipboard
-bindsym $mod+Shift+s exec scrot -s - | xclip -selection clipboard -t image/png -i
