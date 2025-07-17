@@ -25,9 +25,3 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-
-# turn off screen blanking
-xset s off && xset -dpms
-
-# speedy keys
-xset r rate 210 40

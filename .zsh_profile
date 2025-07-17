@@ -1,0 +1,21 @@
+source $HOME/env
+
+export XDG_CONFIG_HOME=$HOME/.config
+
+export GOPATH=$HOME/go
+addToPath /usr/local/go/bin
+addToPath $HOME/.local/go/bin
+addToPath $HOME/go/bin
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+# turn off screen blanking
+xset s off && xset -dpms
+
+# speedy keys
+xset r rate 210 40
+
+# keyboard layout
+setxkbmap -layout 'us,us' -variant ',intl' -option 'grp:alt_shift_toggle'
