@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+log() {
+	if [[ $dry == "1" ]]; then
+		echo "[DRY_RUN]: $@"
+	else
+		echo "$@"	
+	fi
+}
+
+execute() {
+	log "execute $@"
+	if [[ $dry == "1" ]]; then
+		return
+	fi
+
+	"$@"
+}
+
+install_dir=$(cd $(dirname "${BASH_SOURCE[0]}") &> /dev/null && pwd)
+filter=""
+dry="0"
+
+while [[ $# > 0 ]]; do
+	if [[ $1 == "--dry" ]]; then
+		dry="1"
+	else
+		filter="$1"	
+	fi
+	shift
+done
+
+log "$install_dir -- $filter"
+
+cd $install_dir
+
+languages=$(find ./languages -maxdepth 1 -mindepth 1 -executable -type f)
+for language in $languages; do
+	if echo "$language" | grep -qv "$filter"; then
+		log "language filtered: $filter -- $language"
+		continue
+	fi
+	execute ./$language
+done
+
+tools=$(find ./tools -maxdepth 1 -mindepth 1 -executable -type f)
+for tool in $tools; do
+	if echo "$tool" | grep -qv "$filter"; then
+		log "tool filtered: $filter -- $tool"
+		continue
+	fi
+	execute ./$tool
+done
